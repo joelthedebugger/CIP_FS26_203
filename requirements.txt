@@ -1,0 +1,10 @@
+requests
+entsoe-py
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+python-dotenv
+openpyxl
