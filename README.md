@@ -38,7 +38,7 @@ Switzerland's electricity system is heavily dependent on hydropower (~60% of dom
 ## Project Structure
 
 ```
-CIP_FS25_XX/
+CIP_FS26_203/
 ├── data/
 │   ├── raw/
 │   │   ├── weather/        ← Open-Meteo API responses
