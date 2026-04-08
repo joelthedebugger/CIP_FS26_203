@@ -5,13 +5,13 @@ Analysis of the impact of meteorological conditions on electricity prices and lo
 **Course:** CIP – Coding in Practice  
 **Team:** Timo Schildknecht, Joel Rieser, Aurora Rigo  
 **Period of Analysis:** 2015 – 2025  
-**Geographic Scope:** Switzerland (Zurich, Bern, Geneva, Lugano)
+**Geographic Scope:** Switzerland (Zurich, Basel, Geneva, Lugano)
 
 ---
 
 ## Project Description
 
-Switzerland's electricity system is heavily dependent on hydropower (~60% of domestic production), making it inherently sensitive to meteorological conditions. This project investigates how weather variables such as temperature, solar radiation, wind speed, and cloud cover influence electricity prices and load in Switzerland. Data is acquired from three public sources via API and file download, combined into a unified dataset, and analysed using regression and correlation methods.
+Switzerland's electricity system is heavily dependent on hydropower (~60% of domestic production), making it sensitive to meteorological conditions. This project investigates how weather variables such as temperature, solar radiation, wind speed, and cloud cover influence electricity prices and electricity load in Switzerland. Data from multiple public sources is combined into a unified dataset and analysed using correlation analysis and regression models.
 
 ---
 
@@ -19,9 +19,9 @@ Switzerland's electricity system is heavily dependent on hydropower (~60% of dom
 
 | # | Research Question | Key Features | Metric |
 |---|---|---|---|
-| RQ1 | To what extent does daily mean temperature correlate with day-ahead electricity spot prices in Switzerland over 2015–2025? | Daily mean temperature (°C), day-ahead price (EUR/MWh) | Pearson r |
-| RQ2 | How strongly do temperature and solar radiation explain weekly electricity load variability in Switzerland? | Weekly avg. temperature (°C), solar radiation (W/m²), load (MW) | R² |
-| RQ3 | How accurately can temperature, wind speed, and cloud cover predict day-ahead electricity prices? | Temperature, wind speed, cloud cover; target: price (EUR/MWh) | MAE on 2025 test set |
+| RQ1 | To what extent does daily mean temperature correlate with day-ahead electricity spot prices in Switzerland over 2015–2025? | `Temperature`, `price` | Pearson r |
+| RQ2 | How strongly do temperature and solar radiation explain weekly electricity load variability in Switzerland? | `Temperature`, `radiation`, `load` | R² |
+| RQ3 | How accurately can weather variables predict day-ahead electricity prices? | `Weather variables` → `price` | MAE (2023–2025 test set) |
 
 ---
 
@@ -49,13 +49,9 @@ CIP_FS26_203/
 │   ├── 01_data_acquisition.ipynb
 │   ├── 02_data_cleaning.ipynb
 │   └── 03_analysis.ipynb
-├── scripts/
-│   ├── fetch_weather.py
-│   ├── fetch_prices.py
-│   └── fetch_load.py
-├── figures/                ← exported plots and visualizations
-├── output/                 ← result tables and model outputs
-├── requirements.txt    ← Python dependencies
+├── figures/                ← .gitkeep
+├── output/                 ← .gitkeep
+├── requirements.txt        ← Python dependencies
 ├── .gitignore
 └── README.md
 ```
@@ -88,11 +84,9 @@ Then run the notebooks in order:
 
 | Team Member | Contribution |
 |---|---|
-| Timo Schildknecht | `scripts/fetch_prices.py`, `notebooks/01_data_acquisition.ipynb` (ENTSO-E section) |
-| Joel Rieser | `scripts/fetch_load.py`, `notebooks/02_data_cleaning.ipynb` |
-| Aurora Rigo | `scripts/fetch_weather.py`, `notebooks/03_analysis.ipynb` |
-
-> ⚠️ **Note:** Update this table with your actual contributions before final submission.
+| Timo Schildknecht | ENTSO-E sections in `notebooks`, RQ1, report |
+| Joel Rieser | Open-Meteo sections in `notebooks`, RQ2, report |
+| Aurora Rigo | Swissgrid sections in `notebooks`, RQ3, report |
 
 ---
 
