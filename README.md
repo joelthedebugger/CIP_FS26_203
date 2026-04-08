@@ -1,9 +1,9 @@
 # CIP_FS26_203
-Analysis of the impact of meteorological conditions on electricity prices and load in Switzerland (2015–2025)
+**Course:** W.CIP02_Data Collection, Integration and Preprocessing
 # Impact of Meteorological Conditions on Electricity Prices in Switzerland
 
-**Course:** CIP – Data Collection, Integration and Preprocessing  
-**Team:** Timo Schildknecht, Joel Rieser, Aurora Rigo  
+**Group number:** 203   
+**Team members:** Timo Schildknecht, Joel Rieser, Aurora Rigo  
 **Period of Analysis:** 2015 – 2025  
 **Geographic Scope:** Switzerland (Zurich, Basel, Geneva, Lugano)
 
