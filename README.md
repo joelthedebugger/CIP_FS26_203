@@ -44,7 +44,7 @@ CIP_FS26_203/
 │   │   ├── weather/        ← Open-Meteo API responses
 │   │   ├── prices/         ← ENTSO-E day-ahead prices
 │   │   └── load/           ← Swissgrid Excel files per year
-│   └── processed/          ← cleaned and merged datasets
+│   └── processed/          ← clerged datasets
 ├── notebooks/
 │   ├── 01_data_acquisition.ipynb
 │   ├── 02_data_cleaning.ipynb

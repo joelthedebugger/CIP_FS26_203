@@ -9,3 +9,5 @@ figures/*
 
 output/*
 !output/.gitkeep
+
+anaconda_projects/
